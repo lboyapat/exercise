@@ -3,7 +3,13 @@ on:
   push:
     branches-ignore:
       - main
-
+    paths-ignore:
+      - '**/docs/**'
+      - 'dist/**.js'
+  pull_request:
+    paths-ignore:
+      - '**/docs/**'
+      - 'dist/**.js'
 jobs:
   run-tests:
     if: github.repository == 'githubtraining/exercise-exclude-files-from-secret-scanning'
