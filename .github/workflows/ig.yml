@@ -2,4 +2,4 @@ on:
   push:
     paths-ignore:
       - '**/docs/**'
-      - 'dist/**.js*'
+      - 'dist/**.js'
